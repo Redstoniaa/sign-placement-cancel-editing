@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "${id}",
+  "id": "no-sign-initial-gui",
   "version": "${version}",
 
-  "name": "${name}",
+  "name": "No Sign Initial GUI",
   "description": "Stops the sign GUI from showing up upon initial placement of a sign.",
   "authors": [
     "Redstonia"
@@ -13,7 +13,7 @@
     "sources": "https://github.com/Redstoniaa/no-initial-sign-gui"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT",
   "icon": "assets/nsigui/icon.png",
 
   "environment": "*",
@@ -28,7 +28,6 @@
 
   "depends": {
     "fabricloader": ">=0.14.19",
-    "fabric-api": "*",
     "minecraft": ">=1.20",
     "java": ">=17"
   }

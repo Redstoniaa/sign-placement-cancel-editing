@@ -4,6 +4,7 @@
   "package": "nsigui.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "SignItemMixin"
   ],
   "injectors": {
     "defaultRequire": 1
