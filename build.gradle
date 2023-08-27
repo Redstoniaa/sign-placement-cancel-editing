@@ -4,7 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-version = project.mod_version
 group = project.maven_group
 
 repositories {
@@ -25,11 +24,17 @@ base {
 }
 
 processResources {
-    inputs.property "version", project.version
+    inputs.property "id", project.mod_id
+    inputs.property "name", project.mod_name
+    inputs.property "version", project.mod_version
+
     filesMatching("fabric.mod.json") {
-        expand "version": project.mod_version
-        // expand "id": project.mod_id
-        // expand "name": project.mod_name
+        def valueMap = [
+                "id": project.mod_id,
+                "name": project.mod_name,
+                "version": project.mod_version,
+        ]
+        expand valueMap
     }
 }
 

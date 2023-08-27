@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "no-sign-initial-gui",
+  "id": "${id}",
   "version": "${version}",
 
-  "name": "No Sign Initial GUI",
+  "name": "${name}",
   "description": "Stops the sign GUI from showing up upon initial placement of a sign.",
   "authors": [
     "Redstonia"
