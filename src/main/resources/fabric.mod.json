@@ -1,34 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "template-mod",
+  "id": "${id}",
   "version": "${version}",
 
-  "name": "Template Mod",
-  "description": "I am templet",
+  "name": "${name}",
+  "description": "Stops the sign GUI from showing up upon initial placement of a sign.",
   "authors": [
+    "Redstonia"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Redstoniaa/no-initial-sign-gui",
+    "sources": "https://github.com/Redstoniaa/no-initial-sign-gui"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/template/icon.png",
+  "icon": "assets/nsigui/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "template.TemplateMod"
+      "nsigui.NoSignInitialGuiMod::init"
     ]
   },
   "mixins": [
-    "template.mixins.json"
+    "nsigui.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.14.19",
     "fabric-api": "*",
-    "minecraft": "~1.19.4",
+    "minecraft": ">=1.20",
     "java": ">=17"
   }
 }
