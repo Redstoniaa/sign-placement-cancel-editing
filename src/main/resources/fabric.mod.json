@@ -4,26 +4,26 @@
   "version": "${version}",
 
   "name": "${name}",
-  "description": "Stops the sign GUI from showing up upon initial placement of a sign.",
+  "description": "Cancels the editing screen upon placement of a sign. You can edit it later anyway.",
   "authors": [
     "Redstonia"
   ],
   "contact": {
-    "homepage": "https://github.com/Redstoniaa/no-initial-sign-gui",
-    "sources": "https://github.com/Redstoniaa/no-initial-sign-gui"
+    "homepage": "https://github.com/Redstoniaa/sign-placement-cancel-editing",
+    "sources": "https://github.com/Redstoniaa/sign-placement-cancel-editing"
   },
 
   "license": "MIT",
-  "icon": "assets/nsigui/icon.png",
+  "icon": "assets/spce/icon.png",
 
   "environment": "client",
   "entrypoints": {
     "client": [
-      "nsigui.NoSignInitialGuiMod::init"
+      "spce.SignPlacementCancelEditingMod::init"
     ]
   },
   "mixins": [
-    "nsigui.mixins.json"
+    "spce.mixins.json"
   ],
 
   "depends": {
