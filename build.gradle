@@ -1,10 +1,11 @@
 plugins {
     id 'fabric-loom' version '1.2-SNAPSHOT'
-    id 'io.github.juuxel.loom-quiltflower' version '1.8.0'
+    id 'io.github.juuxel.loom-vineflower' version '1.11.0'
     id 'maven-publish'
 }
 
 group = project.maven_group
+version = project.mod_version
 
 repositories {
     maven {
@@ -26,15 +27,15 @@ base {
 processResources {
     inputs.property "id", project.mod_id
     inputs.property "name", project.mod_name
-    inputs.property "version", project.mod_version
+    inputs.property "version", version
 
     filesMatching("fabric.mod.json") {
-        def valueMap = [
+        def map = [
                 "id": project.mod_id,
                 "name": project.mod_name,
-                "version": project.mod_version,
+                "version": version,
         ]
-        expand valueMap
+        expand map
     }
 }
 
